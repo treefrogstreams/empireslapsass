@@ -212,7 +212,11 @@ opacity:0;
 
 	@keyframes sw {
   0% {
-    opacity: 1; /* Snaps to visible exactly at 12s */
+    opacity: 0;
+    transform: scale(1);
+  }
+		48% {
+    opacity: 1; 
     transform: scale(1);
   }
   100% {
@@ -252,7 +256,7 @@ opacity:0;
 }
 
 .flickering-text {
-  animation: flicker .3s infinite;
+  animation: flicker .1s infinite;
 }
 
 </style>
