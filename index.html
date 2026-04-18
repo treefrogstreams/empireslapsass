@@ -367,11 +367,18 @@ img {
    * Resets the animation and shows the start screen.
    */
   StarWars.prototype.reset = function() {
-    this.start.show();
-    this.cloned = this.animation.clone(true);
-    this.animation.remove();
-    this.animation = this.cloned;
-  };
+   if (this.audio) {
+    this.audio.pause();
+    this.audio.currentTime = 0;
+    this.audio.volume = 1;
+  }
+   this.start.show();
+  
+  // 2. Clone and refresh the animation div
+  this.cloned = this.animation.clone(true);
+  this.animation.remove();
+  this.animation = this.cloned;
+};
 
   return StarWars;
 })();
