@@ -209,7 +209,17 @@ opacity:0;
   from {background-position: 5% 5%}
   to{background-position: 1300% 5%}
 }
-
+@-webkit-keyframes sw {
+  0% {
+    
+    opacity: 1;
+  }
+  
+  100% {
+    
+    opacity: 1;
+  }
+}
 
 @keyframes sw {
 	to {transform:scale(0);}
@@ -247,7 +257,7 @@ opacity:0;
 }
 
 .flickering-text {
-  animation: flicker 2s infinite;
+  animation: flicker .3s infinite;
 }
 
 </style>
