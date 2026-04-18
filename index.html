@@ -198,7 +198,7 @@ img {
 opacity:0;
   transform-origin: center center;
 	animation-fill-mode: backwards;
-  animation: sw 13s 0s both;
+  animation: sw 13s 2s both;
 
 	}
 
@@ -216,7 +216,10 @@ opacity:0;
     opacity: 0;
     transform: scale(1);
   }
-
+ 14% {
+    opacity: 1;
+    transform: scale(1);
+  }
   100% {
     opacity: 1;
     transform: scale(0); /* Shrinks away */
@@ -244,11 +247,11 @@ opacity:0;
 
 	@keyframes flicker {
   0%, 19%, 22%, 62%, 64%, 70%, 100% {
-    text-shadow: 0 0 10px #ff7e00, 0 0 20px #ff7e00, 0 0 30px #ff4444;
+    text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #228DFF, 0 0 12px #228DFF;
     opacity: 1;
   }
   20%, 21%, 63%, 65%, 69.9% {
-    text-shadow: none;
+   text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 7px #228DFF, 0 0 8px #228DFF;
     opacity: 0.4;
   }
 }
