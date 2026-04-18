@@ -44,31 +44,7 @@ transform:rotatex(40deg);
 animation: textMove 60s linear infinite;
 }
 
-img {
-  position:absolute;
-	top:50%;
-  left:50%;
-  margin-left:-600px;
-  margin-top:-600px;
-	z-index:1000;
-  transform-origin: center center;
-  animation: sw 13s forwards;
-	
-	}
 
-@keyframes textMove {
-	to {top:-2000px;}
-}
-
-@keyframes stars {
-  from {background-position: 5% 5%}
-  to{background-position: 1300% 5%}
-}
-
-
-@keyframes sw {
-	to {transform:scale(0);}
-}
 
 
 html,
@@ -248,7 +224,31 @@ body {
   }
 }
 
+img {
+  position:absolute;
+	top:50%;
+  left:50%;
+  margin-left:-600px;
+  margin-top:-600px;
+	z-index:1000;
+  transform-origin: center center;
+  animation: sw 13s forwards;
+	
+	}
 
+@keyframes textMove {
+	to {top:-2000px;}
+}
+
+@keyframes stars {
+  from {background-position: 5% 5%}
+  to{background-position: 1300% 5%}
+}
+
+
+@keyframes sw {
+	to {transform:scale(0);}
+}
 
 
 </style>
@@ -282,9 +282,9 @@ body {
 			
 		
     </section>
-<section class="logo">
+
 	<img src="download.jfif"/>
-</section>
+
     <section class="titles">
       <div>
         
