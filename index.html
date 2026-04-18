@@ -24,11 +24,13 @@ body {
   z-index: 1;
 }
 .starwars .start {
-	position:absolute;
+  position: absolute;
+  top: 50%;  
+  left: 50%;  
+  z-index: 2000; 
   font-size: 200%;
-	z-index: 2000; 
   width: 14em;
-  margin: -4em 0 0 -7em;
+  margin: -1em 0 0 -7em; 
   text-align: center;
   cursor: pointer;
 }
@@ -206,7 +208,17 @@ img {
   to{background-position: 1300% 5%}
 }
 
-
+@-webkit-keyframes sw {
+  0% {
+    
+    opacity: 0;
+  }
+  
+  100% {
+    
+    opacity: 1;
+  }
+}
 @keyframes sw {
 	to {transform:scale(0);}
 }
