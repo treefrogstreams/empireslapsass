@@ -209,21 +209,16 @@ opacity:0;
   from {background-position: 5% 5%}
   to{background-position: 1300% 5%}
 }
-@-webkit-keyframes sw {
-  0% {
-    
-    opacity: 1;
-  }
-  
-  100% {
-    
-    opacity: 1;
-  }
-}
 
-@keyframes sw {
-	to {transform:scale(0);}
-	
+	@keyframes sw {
+  0% {
+    opacity: 1; /* Snaps to visible exactly at 12s */
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0); /* Shrinks away */
+  }
 }
 
 /* CSS */
