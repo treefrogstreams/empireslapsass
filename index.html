@@ -197,7 +197,7 @@ img {
  z-index:1000;
 opacity:0;
   transform-origin: center center;
-  animation: sw 13s 12s forwards;
+  animation: sw 13s 12s both;
 
 	}
 
@@ -210,27 +210,10 @@ opacity:0;
   to{background-position: 1300% 5%}
 }
 
-@-webkit-keyframes sw {
-  0% {
-    
-    opacity: 0;
-  }
-  48% {
-    
-    opacity: 0;
-  }
-	 49% {
-    
-    opacity: 1;
-  }
-  100% {
-    
-    opacity: 1;
-  }
-}
+
 @keyframes sw {
 	to {transform:scale(0);}
-	opacity:1;
+	
 }
 
 /* CSS */
